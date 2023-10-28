@@ -16,7 +16,7 @@ const start = () => {
     })
     .catch(err => {
       //console.log('Error with the database occured, the server shut down')
-      throw new Error(err)
+      //throw new Error(err)
     })
 }
 app.all('graphql', createHandler({schema, rootValue: root}))
