@@ -9,13 +9,13 @@ const app = express()
 const start = () => {
   mongoose.connect('mongodb+srv://nikbauer09:9a10ur1Z@newcluster.csmi2qq.mongodb.net/?retryWrites=true&w=majority')
     .then(() => {
-      console.log('Database works')
+      //console.log('Database works')
     })
     .then(() => {
       app.listen(process.env.SERVER_PORT, () => console.log(`The server works at ${process.env.SERVER_URL}:${process.env.SERVER_PORT}`))
     })
     .catch(err => {
-      console.log('Error with the database occured, the server shut down')
+      //console.log('Error with the database occured, the server shut down')
       throw new Error(err)
     })
 }
